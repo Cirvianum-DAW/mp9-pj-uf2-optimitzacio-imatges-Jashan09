@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="ca" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planets</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="logo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Koulen" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Container amb imatge de fons -->
+  <div class="min-h-screen relative">
+    <picture>
+      <source class="w-full object-cover h-screen rounded-t-lg" media="(max-width: 799px)" srcset="/portadaPlanets.webp" alt="Imatge de portada de la web amb un bosc fosc">
+      <source class="w-full object-cover h-screen rounded-t-lg" media="(min-width: 800px)" srcset="/portadaPlanets.webp" alt="Imatge de portada de la web amb un bosc fosc">
+      <img class="w-full object-cover h-screen rounded-t-lg" src="portadaPlanets.webp" alt="Imatge de portada de la web amb un bosc fosc">
+    </picture>
+    <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+    <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+      <!-- Text sobreposat -->
+      <div class="text-white text-center">
+        <h1 class="text-5xl font-bold font-[Koulen] tracking-wide">PLANETS OF OUR SOLAR SYSTEM</h1>
+        <br>
+        <p class="text-3xl">Featuring the Earth, Venus, Jupiter and more...</p>
+      </div>
+      <!-- Fi de text sobreposat -->
+    </div>
+  </div>
+  <!-- Fi de container amb imatge de fons -->
+
+  <!-- Fletxa scroll cap a la part inferior de la pàgina -->
+  <a href="#serveis" class="flex  absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" class="h-10 w-10">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </a>
+  <!-- Fi de fletxa scroll cap a la part inferior de la pàgina -->
+
+  <!-- Cards amb els diferents serveis del restaurant class="bg-cover bg-center" -->
+  <div id="serveis"  >
+    <div class="w-full h-screen relative">        
+
+      <div class="w-full h-full left-0 top-0 absolute bg-gray-200"  style="background-image: url('stars.jpg')"></div>
+      <div class="clip w-24 h-24 lg:w-44 lg:h-44 left-1/4 top-2/4 -translate-y-1/2 -translate-x-1/2 absolute transition-all duration-300 ease-in-out flex items-center justify-center bg-cover bg-center rounded-full" style="background-image: url('earth2.png')">
+        <a href='/plats/plats'>
+          <span class="text-center text-w-400 w-12 h-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400  text-xl   lg:text-4xl font-normal font-['Koulen']">
+            PLANETS
+          </span>
+        </a>
+        <div class="bg--400"></div>
+      </div>
+      <div class="clip w-24 h-24 lg:w-44 lg:h-44 left-1/2 top-2/4 -translate-x-1/2 -translate-y-1/2 absolute bg-neutral-600 hover:bg-neutral-500 transition-all duration-300 ease-in-out flex items-center justify-center bg-cover bg-center rounded-full" style="background-image: url('venus3.png')">
+        <a href='nosaltres.html'>
+          <span class="text-center text-w-400 w-12 h-12 text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-yellow-500 to-rose-400  text-xl lg:text-4xl font-normal font-['Koulen']">
+            KNOW US
+          </span>
+        </a>
+      </div>
+      <div class="bg-"></div>
+      <div class="clip w-24 h-24 lg:w-44 lg:h-44 left-3/4 top-2/4 -translate-y-1/2 -translate-x-1/2 absolute bg-neutral-600 hover:bg-neutral-500 transition-all duration-300 ease-in-out flex items-center justify-center bg-cover bg-center rounded-full"  style="background-image: url('jupiter2.png')">
+        <a href='/informacio/informacio'>
+        <span class="text-center text-w-400 w-12 h-12 text-transparent bg-clip-text bg-gradient-to-r from-orange-900 via-orange-500 to-orange-900  text-xl lg:text-3xl font-normal font-['Koulen']">
+            WEBOGRAPHY
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Fi de cards amb els diferents serveis del restaurant -->
+<script src="/mp9-uf2-optimitzacio-imatges-llpujadas.59712999.js"></script></body>
+
+</html>
